@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <div class="presentation">
+            <video autoplay muted id="video" loop>
+                <source src="nuee.mp4" type="video/mp4">
+            </video>
+            <h1> Hi I'm Pierre</h1>            
+        </div>
+        
+
+
+        <div class="nav">
+            <h3 id="link">Presentation</h3>
+            <h3 id="separator">////</h3>
+            <h3 id="link">Projet</h3>
+            <h3 id="separator">////</h3>
+            <h3 id="link">Skills</h3>
+            <h3 id="separator">////</h3>
+            <h3 id="link">Contact</h3>
+        </div>
+        <div class="description">
+            <div class="texte-desc">
+            <div class="texte_sub">
+                <h3 id="command">$cat /home/Pierre/detail.txt</h3>
+                <h3>Je suis un étudiant en informatique à l'Université Paris Saclay.
+                    J'effectue actuellement un BUT informatique afin de pouvoir entrer dans une école
+                    d'ingénieur. Je m'intéresse plus particulièrement au domaine de la création d'Application, de
+                    logiciel et au Cloud Computing.
+                </h3>
+            </div>
+                <div class="img">
+                    <img src="parissaclay.jpg" alt="Mon Universite" id="img_uni">
+                </div>
+            
+
+            </div>
+            <div class="parcours">
+                <h3 id="command">$cat /home/Pierre/parcours.txt</h3>
+                <div class="metro-container">
+
+                    <div class="metro-line">
+                        <div class="station">
+                            <div class="circle" style="background-color: transparent; border: transparent;"></div>
+                        </div>
+                      <div class="station">
+                          <div class="circle"></div>
+                          <span class="label" onclick="window.open('https://www.iut-orsay.universite-paris-saclay.fr/informatique-en-3-ans', '_blank')">BUT Informatique à l'université Paris Sacaly</span>
+                      </div>
+                      <div class="station">
+                        <div class="circle" style="background-color: transparent; border: transparent;"></div>
+                    </div>
+                    <div class="station">
+                        <div class="circle" style="background-color: transparent; border: transparent;"></div>
+                    </div>
+                      <div class="station">
+                        <div class="circle"></div>
+                        <span class="label" onclick="window.open('https://oniseptv.onisep.fr/video/la-specialite-numerique-et-sciences-informatiques-nsi#:~:text=Au%20lyc%C3%A9e%2C%20en%20voie%20g%C3%A9n%C3%A9rale,des%20sites%20internet%2C%20des%20applications%E2%80%A6', '_blank')">Lycée avec la spécialité Numérique Science de L'informatique et Mathématiques</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="write_code">
+                    <h3 id="code"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="projet">
+
+            <div class="projet1">
+                <div class="media">
+                    <video autoplay muted id="media_projet" loop>
+                        <source src="nuee.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="project_description">
+                    <h3>Simulation d'une Nuée d'oiseau en 3d</h3>
+                    <div class="skills">
+                        <h4 id="python">Python</h4>
+                        <h4 id="other">OpenGL</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projet1">
+                <div class="media">
+                    <img id="media_projet" src="s102.gif" style="width: 15rem;">                                    
+                </div>
+                <div class="project_description">
+                    <h3>Création d'un jeux vidéo utilisant la librairie SFML</h3>
+                    <div class="skills">
+                        <h4 id="cpp">C++</h4>
+                        <h4 id="other">SFML</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projet1">
+                <div class="media">
+                    <img id="media_projet" src="s102.gif" style="width: 15rem;">                                    
+                </div>
+                <div class="project_description">
+                    <h3>Application Etudiante avec IA intégré</h3>
+                    <div class="skills">
+                        <h4 id="python">Python</h4>
+                        <h4 id="other" style="    border: 2px solid #038bdf; color:  #038bdf;">Flutter</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projet1">
+                <div class="media">
+                    <img id="media_projet" src="s102.gif" style="width: 15rem;">                                    
+                </div>
+                <div class="project_description">
+                    <h3>Simulation d'une simulation du comportement humain à l'aide du machine learning </h3>
+                    <div class="skills">
+                        <h4 id="cpp">C++</h4>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="skills_tree">
+            <div class="hard_skills">
+                <div class="tree">
+                    <ul>
+                        <li>
+                            <a style="font-size: 25px; border: 5px solid;">Hard Skills</a>
+                            <ul>
+                                <li>
+                                    <a>Traitement des données </a>
+                                    <ul>
+                                        <li>
+                                            <a>Maitrise de SQL</a>   
+                                            <ul>
+                                                <li>
+                                                    <a>SQLite</a>
+                                                </li>
+                                                <li>
+                                                    <a>MySQL</a>
+                                                </li>
+                                                <li>
+                                                    <a>OracleSQL</a>
+                                                </li>
+                                            </ul>                                     
+                                        </li>
+                                        <li>
+                                            <a>Librairise Panda</a>
+                                        </li>
+                                        <li>
+                                            <a>Format XML,CSV,JSON...</a>
+                                        </li>
+                                    </ul>                                
+                                </li>
+                                <li>
+                                    <a>Algorithmie</a>
+                                    <ul>
+                                        <li>
+                                            <a>Connaissance de language</a>
+                                            <ul>
+                                                <li>
+                                                    <a>C/C++</a>
+                                                </li>
+                                                <li>
+                                                    <a>Python</a>
+                                                </li>
+                                                <li>
+                                                    <a>Java</a>
+                                                </li>
+                                                <li>
+                                                    <a>PHP</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a>Resolution de Problème</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>Système/Outils</a>
+                                    <ul>
+                                        <li>
+                                            <a>Maitrise Linux, Windows</a>
+                                        </li>
+                                        <li>
+                                            <a>Git/GitLab</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="soft_skills">
+                <div class="tree">
+                    <ul>
+                        <li>
+                            <a style="font-size: 25px; border: 5px solid;">Soft Skills</a>
+                            <ul>
+                                <li>
+                                    <a>Management en Equipe</a>
+                                    <ul>
+                                        <li>
+                                            <a>Cours de Gestion de Projet</a>   
+                                            <ul>
+                                                <li>
+                                                    <a>Organisation</a>
+                                                </li>
+                                                <li>
+                                                    <a>Maitrise d'un Projet</a>
+                                                </li>
+                                                <li>
+                                                    <a>Gestion du temps</a>
+                                                </li>
+                                            </ul>                                     
+                                        </li>
+                                        <li>
+                                            <a>Communication</a>
+                                        </li>
+                                        <li>
+                                            <a>Travail en equipe</a>
+                                        </li>
+                                    </ul>                                
+                                </li>
+                                <li>
+                                    <a>Teamwork</a>
+                                    <ul>
+                                        <li>
+                                            <a>Esprit critique</a>
+                                            <ul>
+                                                <li>
+                                                    <a>Attention au détail</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a>Adaptabilité</a>
+                                        </li>
+                                        <li>
+                                            <a>Créativité</a>
+                                            <ul>
+                                                <li>
+                                                    <a>Cours D'interaction humain machine</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a>Collaboration</a>
+                                        </li>
+                                    </ul>
+                                </li>                            
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <script>
+            function write() {
+                const value = `
+#include <stdint.h> // uint32_t
+float Q_rsqrt(float number)
+{
+union {
+float f;
+uint32_t i;
+} conv = { .f = number };
+conv.i = 0x5f3759df - (conv.i >> 1);
+conv.f *= 1.5F - (number * 0.5F * conv.f * conv.f);
+return conv.f;
+}`;
+    
+                let code_text = document.getElementById("code");
+    
+                function typeWriter(index) {
+                    if (index < value.length) {
+                        code_text.textContent += value[index];
+                        index++;
+                        setTimeout(() => typeWriter(index), 35); // Adjust delay as needed
+                    }
+                    else if (index >= value.length){
+                        index = 0;                        
+                        setTimeout(() => typeWriter(index), 205);
+                        code_text.textContent = ""
+                    }
+                }
+    
+                typeWriter(0);
+            }
+    
+            write(); // Call the function
+        </script>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

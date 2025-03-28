@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@font-face {
+    font-family: "Satoshi";
+    src: url("Satoshi-Variable.ttf");
+}
+
+.metro-container {
+    width: 100%;
+    display: flex;
+    float: left;
+    margin-left: 3rem;
+}
+
+.metro-line {
+    position: relative;
+    height: 100%;
+    padding: 10px 0;
+}
+
+.station {
+    position: relative;
+    height: 60px;
+}
+
+.circle {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(3, 3, 200);
+    border: 3px solid rgb(3, 3, 200);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    height: 110px;
+    width: 6px;
+    border-radius: 15px;
+    background-color: green;
+    transform: translateX(-50%);
+}
+
+.label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Satoshi";
+    font-weight: 500;
+    line-height: 18px;
+    border: 1px solid #111;
+    border-radius: 7px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition-duration: 0.45s;
+}
+
+.label:hover {
+    color: #FFF;
+    background-color: #111;
+}
+
+.station:last-child .circle::after {
+    display: none;
+}
+
+#code {
+    margin-top: 25rem;
+    color: #7c7b76;
+}
+
+*{
+    margin: 0;
+    padding: 0;;
+}
+
+.presentation > h1{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f6efe7;
+    text-align: center;
+    font-size: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 3px #111;
+}
+
+.presentation > #video{
+    width: 100%;
+    max-height: 40rem;
+}
+
+.presentation{
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+}
+
+body{
+    background-color: #111;
+}
+
+.texte_sub{
+    background-color: #722F37;
+    border-radius: 15px;
+    margin-left: 2rem;
+    box-shadow: #501f24 10px 10px;
+}
+
+.texte_sub > h3{
+    color: #EFDFBB;
+}
+
+.parcours > h3{
+    color: #501f24;
+}
+
+.parcours{
+    background-color: #EFDFBB;
+    margin-right: 2rem;
+    box-shadow: #ac9e7c 10px 10px;
+    width: 100%;
+    
+}
+#command{
+    color: #039008;
+}
+
+.parcours, .texte_sub{
+    border-radius: 15px;
+    padding: 2rem;
+    line-height: 2rem;
+}
+
+.description{
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    margin-top: 10rem;
+}
+
+.description{
+    font-family: "Satoshi";
+    font-weight: 300;
+    font-style: normal;
+}
+
+#img_uni{
+    border-radius: 15px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    height: 30rem;
+}
+
+.nav {
+    color: #fff;
+    font-family: "Satoshi";
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #111;
+    border-radius: 7px;
+    padding: 1rem 0;
+    z-index: 1;
+    top: 90%;
+}
+
+
+
+#link{
+    border: 1px #fff solid; 
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0 1rem 0 1rem;
+    transition-duration: 0.45s;
+    cursor: pointer;
+}
+
+#link:hover{
+    border: transparent;
+    color: #111;
+    background-color: #fff;
+}
+
+#separator{
+    padding-top: 0.5rem;
+}
+
+.projet{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    gap: 7rem;
+    margin-left: 4rem;
+}
+
+.project_description {
+    font-family: "Satoshi";
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F6EE;
+    width: 25rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 5rem;
+    text-align: center;
+    margin-top: 3rem;
+    position: relative; /* Needed for absolute positioning of pseudo-element */
+    cursor: pointer;
+}
+
+
+.project_description::before {
+    content: "";
+    position: absolute;
+    top: -3rem; /* Raise the arc higher */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25rem;  /* Slightly wider */
+    height: 3rem; /* Taller for a more pronounced peak */
+    background-color: #F9F6EE; /* Matches the background */
+    border-radius: 4rem 4rem 0 0; /* More curvature for a true half-circle */
+}
+
+#media_projet { 
+    height: 15rem;
+    position: relative; /* Ensure proper stacking */
+    left: 58%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    margin-bottom: -2rem; /* Pull it up to align with the half-circle */
+}
+
+.media {
+    transition-duration: 0.45s;
+}
+
+#media_projet {
+    position: relative;  /* Needed for top-based movement */
+    transition: top 0.45s ease-in-out; /* Smooth transition */
+}
+
+.media:hover #media_projet {
+    top: -15px; /* Moves up smoothly */
+    border: 2px solid #FFF;
+}
+
+
+.project_description {
+    transition-duration: 0.45s;
+}
+
+.project_description:hover #media_projet {
+    transform: translateY(10%);
+    transition: transform 0.45s ease-in-out;
+    border: 10px #FFF solid;
+}
+
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+#python{
+    border: 2px solid #FFE974;
+    color:  #FFE974;
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+#cpp{
+    border: 2px solid #025be0;
+    color:  #025be0;
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+#other{
+    border: 2px solid #039a03;
+    color:  #039a03;
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+footer{
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+}
+
+.tree{
+    margin-left: 5rem;
+}
+
+.skills_tree{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    margin-top: 10rem;
+}
+
+.soft_skills{
+    background: rgba(251, 160, 2, 0.37);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.9px);
+    -webkit-backdrop-filter: blur(9.9px);
+    border: 1px solid rgba(251, 160, 2, 1);
+    
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.hard_skills{
+    /* From https://css.glass */
+/* From https://css.glass */
+background: rgba(160, 67, 10, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.7px);
+-webkit-backdrop-filter: blur(9.7px);
+border: 1px solid rgba(160, 67, 10, 1);
+
+padding-bottom: 5rem;
+padding-top: 5rem;
+margin-left: 3rem;
+margin-right: 3rem;
+}
+
+
+.tree ul {
+	padding-top: 20px; position: relative;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.tree li {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 2px solid #ccc;
+	width: 50%; height: 20px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 2px solid #ccc;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 2px solid #ccc;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 2px solid #ccc;
+	width: 0; height: 20px;
+}
+
+.tree li a{
+	border: 2px solid #ccc;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #ffffff;
+	
+	font-size: 18px;
+	display: inline-block;
+	font-family: "Satoshi";
+
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+	background: #c8e4f8; color: #000; border: 2px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  #94a0b4;
+}
+
