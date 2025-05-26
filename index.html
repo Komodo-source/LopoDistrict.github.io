@@ -3,67 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
     <main>
-        <div class="presentation">
-            <video autoplay muted id="video" loop>
-                <source src="nuee.mp4" type="video/mp4">
+        <div class="presentation" id="presentation">
+            <video id="video" width="1200" height="680" data-setup='{}' autoplay loop muted>
+                <source src="cellular.mp4" type="video/mp4">
             </video>
             <h1> Hi I'm Pierre</h1>            
         </div>
+        <a id="source" onclick="window.open('https://www.reddit.com/r/cellular_automata/comments/eg6vgk/twodimensional_historydependent_cellular_automata/', '_blank')">Automates cellulaires bidimensionnels dépendant de l'histoire </a>
         
-
-
+        <!-- Fixed navbar that stays visible and centered -->
         <div class="nav">
-            <h3 id="link">Presentation</h3>
+            <h3 id="link" data-target="presentation">Presentation</h3>
             <h3 id="separator">////</h3>
-            <h3 id="link">Projet</h3>
+            <h3 id="link" data-target="title-projet">Projet</h3>
             <h3 id="separator">////</h3>
-            <h3 id="link">Skills</h3>
+            <h3 id="link" data-target="skills">Skills</h3>
             <h3 id="separator">////</h3>
-            <h3 id="link">Contact</h3>
+            <h3 id="link" data-target="contact">Contact</h3>
         </div>
+
         <div class="description">
             <div class="texte-desc">
-            <div class="texte_sub">
-                <h3 id="command">$cat /home/Pierre/detail.txt</h3>
-                <h3>Je suis un étudiant en informatique à l'Université Paris Saclay.
-                    J'effectue actuellement un BUT informatique afin de pouvoir entrer dans une école
-                    d'ingénieur. Je m'intéresse plus particulièrement au domaine de la création d'Application, de
-                    logiciel et au Cloud Computing.
-                </h3>
-            </div>
+                <div class="texte_sub">
+                    <h3 id="command">$cat /home/Pierre/detail.txt</h3>
+                    <h3>Je suis un étudiant en informatique à l'Université Paris Saclay.
+                        J'effectue actuellement un BUT informatique afin de pouvoir entrer dans une école
+                        d'ingénieur. Je m'intéresse plus particulièrement au domaine de la création d'Application, de
+                        logiciel et au Cloud Computing.
+                    </h3>
+                </div>
                 <div class="img">
                     <img src="parissaclay.jpg" alt="Mon Universite" id="img_uni">
                 </div>
-            
-
             </div>
             <div class="parcours">
                 <h3 id="command">$cat /home/Pierre/parcours.txt</h3>
+                <h3>Voici le parcours que j'ai réalisé jusqu'à aujourd'hui :</h3>
+                </h3>
                 <div class="metro-container">
-
                     <div class="metro-line">
                         <div class="station">
                             <div class="circle" style="background-color: transparent; border: transparent;"></div>
                         </div>
-                      <div class="station">
-                          <div class="circle"></div>
-                          <span class="label" onclick="window.open('https://www.iut-orsay.universite-paris-saclay.fr/informatique-en-3-ans', '_blank')">BUT Informatique à l'université Paris Sacaly</span>
-                      </div>
-                      <div class="station">
-                        <div class="circle" style="background-color: transparent; border: transparent;"></div>
-                    </div>
-                    <div class="station">
-                        <div class="circle" style="background-color: transparent; border: transparent;"></div>
-                    </div>
-                      <div class="station">
-                        <div class="circle"></div>
-                        <span class="label" onclick="window.open('https://oniseptv.onisep.fr/video/la-specialite-numerique-et-sciences-informatiques-nsi#:~:text=Au%20lyc%C3%A9e%2C%20en%20voie%20g%C3%A9n%C3%A9rale,des%20sites%20internet%2C%20des%20applications%E2%80%A6', '_blank')">Lycée avec la spécialité Numérique Science de L'informatique et Mathématiques</span>
-                    </div>
+                        <div class="station">
+                            <div class="circle"></div>
+                            <span class="label" onclick="window.open('https://www.iut-orsay.universite-paris-saclay.fr/informatique-en-3-ans', '_blank')">BUT Informatique à l'université Paris Sacaly</span>
+                            <span class="labelLeft">2024 - ...</span>
+                        </div>
+                        <div class="station">
+                            <div class="circle" style="background-color: transparent; border: transparent;"></div>
+                        </div>
+                        <div class="station">
+                            <div class="circle" style="background-color: transparent; border: transparent;"></div>
+                        </div>
+                        <div class="station">
+                            <div class="circle"></div>
+                            <span class="label" onclick="window.open('https://oniseptv.onisep.fr/video/la-specialite-numerique-et-sciences-informatiques-nsi#:~:text=Au%20lyc%C3%A9e%2C%20en%20voie%20g%C3%A9n%C3%A9rale,des%20sites%20internet%2C%20des%20applications%E2%80%A6', '_blank')">Lycée avec la spécialité Numérique Science de L'informatique et Mathématiques</span>
+                            <span class="labelLeft">2021 - 2024</span>
+                        </div>
                     </div>
                 </div>
                 <div class="write_code">
@@ -71,9 +74,10 @@
                 </div>
             </div>
         </div>
+        <h1 id="title-projet">Projet réalisé: </h1>
+        <h3 id="sub">Découvrez mes projets que j'ai réalisé dans le cadre académique ou seul</h3>
         <div class="projet">
-
-            <div class="projet1">
+            <div class="projet1" onclick="window.open('https://github.com/LopoDistrict/Nuee', '_blank')">
                 <div class="media">
                     <video autoplay muted id="media_projet" loop>
                         <source src="nuee.mp4" type="video/mp4">
@@ -89,7 +93,7 @@
             </div>
 
             <div class="projet1">
-                <div class="media">
+                <div class="media" onclick="window.open('./s102.pdf', '_blank')">
                     <img id="media_projet" src="s102.gif" style="width: 15rem;">                                    
                 </div>
                 <div class="project_description">
@@ -101,216 +105,220 @@
                 </div>
             </div>
 
-            <div class="projet1">
+            <div class="projet1" onclick="window.open('https://github.com/LopoDistrict/Academic', '_blank')">
                 <div class="media">
-                    <img id="media_projet" src="s102.gif" style="width: 15rem;">                                    
+                    <img id="media_projet" src="img.png" style="width: 15rem;">                                    
                 </div>
                 <div class="project_description">
                     <h3>Application Etudiante avec IA intégré</h3>
                     <div class="skills">
                         <h4 id="python">Python</h4>
-                        <h4 id="other" style="    border: 2px solid #038bdf; color:  #038bdf;">Flutter</h4>
+                        <h4 id="other" style="border: 2px solid #038bdf; color: #038bdf;">Flutter</h4>
                     </div>
                 </div>
             </div>
 
-            <div class="projet1">
+            <div class="projet1" onclick="window.open('https://github.com/LopoDistrict/HumanSimulation', '_blank')">
                 <div class="media">
-                    <img id="media_projet" src="s102.gif" style="width: 15rem;">                                    
+                    
+                    <video id="media_projet" width="1200" height="680" data-setup='{}' autoplay loop muted style="width: 15rem;">
+                        <source src="img.mp4" type="video/mp4">
+                    </video>                                  
                 </div>
                 <div class="project_description">
-                    <h3>Simulation d'une simulation du comportement humain à l'aide du machine learning </h3>
+                    <h3>Simulation  du comportement humain à l'aide du machine learning (RL)</h3>
                     <div class="skills">
                         <h4 id="cpp">C++</h4>
-
                     </div>
                 </div>
             </div>
-
         </div>
+            <h3 id="title-skills" >Skills</h3>
+            
+            <!-- Improved hexagon layout -->
+            <div class="sub-title">
+                <h3 id="subtitle" >Hard Skills / Compétences techniques</h3>
+            </div>
+            <div class="hard-skills">                
+                
+                <div class="hexagon">
+                    <h3>Traitement des données</h3>
+                    <p>Maitrise d'OracleSQL, MySQL, SQLite</p>
+                    <p>Python et Livrairie Panda, Numpy, Matplotlib</p>
+                    <p>Format de fichier JSON, XML, CSV...</p>   
+                    <p>Visualisation des données</p>
+                </div>
 
-        <div class="skills_tree">
-            <div class="hard_skills">
-                <div class="tree">
-                    <ul>
-                        <li>
-                            <a style="font-size: 25px; border: 5px solid;">Hard Skills</a>
-                            <ul>
-                                <li>
-                                    <a>Traitement des données </a>
-                                    <ul>
-                                        <li>
-                                            <a>Maitrise de SQL</a>   
-                                            <ul>
-                                                <li>
-                                                    <a>SQLite</a>
-                                                </li>
-                                                <li>
-                                                    <a>MySQL</a>
-                                                </li>
-                                                <li>
-                                                    <a>OracleSQL</a>
-                                                </li>
-                                            </ul>                                     
-                                        </li>
-                                        <li>
-                                            <a>Librairise Panda</a>
-                                        </li>
-                                        <li>
-                                            <a>Format XML,CSV,JSON...</a>
-                                        </li>
-                                    </ul>                                
-                                </li>
-                                <li>
-                                    <a>Algorithmie</a>
-                                    <ul>
-                                        <li>
-                                            <a>Connaissance de language</a>
-                                            <ul>
-                                                <li>
-                                                    <a>C/C++</a>
-                                                </li>
-                                                <li>
-                                                    <a>Python</a>
-                                                </li>
-                                                <li>
-                                                    <a>Java</a>
-                                                </li>
-                                                <li>
-                                                    <a>PHP</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a>Resolution de Problème</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a>Système/Outils</a>
-                                    <ul>
-                                        <li>
-                                            <a>Maitrise Linux, Windows</a>
-                                        </li>
-                                        <li>
-                                            <a>Git/GitLab</a>
-                                        </li>
-                                    </ul>
-                                </li>
+                <div class="hexagon">
+                    <h3>Algorithmie et Programmation</h3>
+                    <p>Languages: C++/C, Python, Java, PHP (basique), JavaScript</p>
+                    <p>Résolution de problème</p>
+                    <p>Visualisation graphique avec OpenGL, PyQt5</p>   
+                </div>
 
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="hexagon">
+                    <h3>Système/Outils</h3>
+                    <p>Maitrise de Linux, Windows</p>
+                    <p>Connaissance de Git/GitLab/GIthub</p>                    
                 </div>
             </div>
 
-            <div class="soft_skills">
-                <div class="tree">
-                    <ul>
-                        <li>
-                            <a style="font-size: 25px; border: 5px solid;">Soft Skills</a>
-                            <ul>
-                                <li>
-                                    <a>Management en Equipe</a>
-                                    <ul>
-                                        <li>
-                                            <a>Cours de Gestion de Projet</a>   
-                                            <ul>
-                                                <li>
-                                                    <a>Organisation</a>
-                                                </li>
-                                                <li>
-                                                    <a>Maitrise d'un Projet</a>
-                                                </li>
-                                                <li>
-                                                    <a>Gestion du temps</a>
-                                                </li>
-                                            </ul>                                     
-                                        </li>
-                                        <li>
-                                            <a>Communication</a>
-                                        </li>
-                                        <li>
-                                            <a>Travail en equipe</a>
-                                        </li>
-                                    </ul>                                
-                                </li>
-                                <li>
-                                    <a>Teamwork</a>
-                                    <ul>
-                                        <li>
-                                            <a>Esprit critique</a>
-                                            <ul>
-                                                <li>
-                                                    <a>Attention au détail</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a>Adaptabilité</a>
-                                        </li>
-                                        <li>
-                                            <a>Créativité</a>
-                                            <ul>
-                                                <li>
-                                                    <a>Cours D'interaction humain machine</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a>Collaboration</a>
-                                        </li>
-                                    </ul>
-                                </li>                            
-                            </ul>
-                        </li>
-                    </ul>
+            <div class="sub-title">
+                <h3 id="subtitle" >Soft Skills / Compétences Sociales</h3>
+            </div>
+            <div class="hard-skills">                
+                
+                <div class="hexagon-soft">
+                    <h3>Management en équipe</h3>
+                    <p>Cours de Gestion Projet</p>
+                    <p>Communication et Organisation</p>
+                    <p>Travail en équipe et la maitrise du temps</p>   
                 </div>
 
+                <div class="hexagon-soft">
+                    <h3>Team Work</h3>
+                    <p>Esprit critique</p>
+                    <p>Attention au détail</p>
+                    <p>Adaptabilité et Collaboration</p>   
+                </div>
+
+                <div class="hexagon-soft">
+                    <h3>Créativité </h3>
+                    <p>Cours d'interaction Humain Machine (IHM)</p>                    
+                </div>
+            </div>
+
+            <h3 id="title-skills" >Hobbies</h3>
+            <h3 id="sub">Voici les disciplines que je pratique en dehors du cercle Académique</h3>
+            <div class="Passion">
+                
+                <div class="tennis">
+                    <img src="tennis.jpg" alt="tennis" id="imgHobbies">
+                    <h3 id="sub-hobbies">Tennis</h3>
+                    
+                </div>
+
+                <div class="echec">                    
+                    <img src="echec.jpg" alt="tennis" id="imgHobbies">
+                    <h3 id="sub-hobbies">echec</h3>
+                </div>
+
+                <div class="batterie">
+                    <img src="drums.jpg" alt="tennis" id="imgHobbies">
+                    <h3 id="sub-hobbies">Batterie</h3>
+                </div>
+            </div>
+
+            <div class="contact" id="contact">
+                <div class="main-cont">
+                    <h1>Contact</h1>
+                    <h3>Vous pouvez me contactez par les moyens suivants: </h3>
+                    <div class="linkedin">
+                        <img src="link.webp" id="link-img" onclick="window.location.href='https://www.linkedin.com/in/pierre-sounouvou-24773a329/'">
+                        <p onclick="window.location.href='https://www.linkedin.com/in/pierre-sounouvou-24773a329/'">Mon linkedin</p>
+                    </div>
+                    <div class="Github">
+                        <img src="git" id="git-img" onclick="window.location.href='https://github.com/LopoDistrict'">
+                        <p onclick="window.location.href='https://github.com/LopoDistrict'">Mon Github</p>
+                    </div>
+                    <div class="Email">
+                        <img src="email.jpg" id="git-img">
+                        <p>Mon Email: pierre.sounouvou@universite-paris-saclay.fr</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="me.png" id="photo">
+                </div>
             </div>
         </div>
-
-
 
         <script>
-            function write() {
-                const value = `
-#include <stdint.h> // uint32_t
-float Q_rsqrt(float number)
-{
-union {
-float f;
-uint32_t i;
-} conv = { .f = number };
-conv.i = 0x5f3759df - (conv.i >> 1);
-conv.f *= 1.5F - (number * 0.5F * conv.f * conv.f);
-return conv.f;
-}`;
-    
-                let code_text = document.getElementById("code");
-    
-                function typeWriter(index) {
-                    if (index < value.length) {
-                        code_text.textContent += value[index];
-                        index++;
-                        setTimeout(() => typeWriter(index), 35); // Adjust delay as needed
+            // Add this JavaScript to handle smooth scrolling and transitions
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get all navigation links
+                const navLinks = document.querySelectorAll('#link');
+                
+                // Add click event listeners to each link
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('data-target');
+                        const targetElement = document.getElementById(targetId);
+                        
+                        if (targetElement) {
+                            // Scroll to the target element with smooth behavior
+                            // Add offset to account for the fixed navbar at bottom
+                            const navbarHeight = document.querySelector('.nav').offsetHeight;
+                            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
+                            
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth'
+                            });
+                            
+                            // Optional: Add active class to target section
+                            document.querySelectorAll('main > div').forEach(div => {
+                                div.classList.remove('active');
+                            });
+                            targetElement.classList.add('active');
+                        }
+                    });
+                });
+                
+                // Intersection Observer to handle section transitions as user scrolls
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                        }
+                    });
+                }, {
+                    threshold: 0.1
+                });
+                
+                // Observe all sections
+                document.querySelectorAll('main > div').forEach(section => {
+                    observer.observe(section);
+                });
+                
+                // Your existing write function
+                function write() {
+                    const value = `
+    #include <stdint.h> // uint32_t
+    float Q_rsqrt(float number)
+    {
+    union {
+    float f;
+    uint32_t i;
+    } conv = { .f = number };
+    conv.i = 0x5f3759df - (conv.i >> 1);
+    conv.f *= 1.5F - (number * 0.5F * conv.f * conv.f);
+    return conv.f;
+    }`;
+        
+                    let code_text = document.getElementById("code");
+        
+                    function typeWriter(index) {
+                        if (index < value.length) {
+                            code_text.textContent += value[index];
+                            index++;
+                            setTimeout(() => typeWriter(index), 35);
+                        }
+                        else if (index >= value.length){
+                            index = 0;                        
+                            setTimeout(() => typeWriter(index), 205);
+                            code_text.textContent = ""
+                        }
                     }
-                    else if (index >= value.length){
-                        index = 0;                        
-                        setTimeout(() => typeWriter(index), 205);
-                        code_text.textContent = ""
-                    }
+        
+                    typeWriter(0);
                 }
-    
-                typeWriter(0);
-            }
-    
-            write(); // Call the function
+        
+                write();
+            });
         </script>
     </main>
     <footer>
-
     </footer>
-    
 </body>
 </html>
