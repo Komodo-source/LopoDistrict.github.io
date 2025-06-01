@@ -606,6 +606,23 @@ main > div.active {
     
 }
 
+#langue_txt{
+    color: #FFF;
+	font-family: "Satoshi";
+    margin-left: 5rem;
+    font-size: 1.2rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
+    border: 2px solid #fff;
+    padding: 1rem;
+    padding-left: 2rem;
+    border-radius: 7px;
+}
+
+.langues{
+    margin: 2rem 0 2rem 0;
+}
+
 #txt_stage{
     color: #FFF;
 	font-family: "Satoshi";
