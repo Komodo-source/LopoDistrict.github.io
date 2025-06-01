@@ -586,7 +586,6 @@ main > div.active {
     font-size: 1.5rem;
     margin-left: 5rem;
     text-align: center;
-    
 }
 
 .Passion {
@@ -597,4 +596,53 @@ main > div.active {
     margin-bottom: 2rem;
     margin-top: 2rem;
     flex-wrap: wrap;
+}
+
+.stage-content{
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 0 4rem 0;
+    gap: 5rem;
+    
+}
+
+#txt_stage{
+    color: #FFF;
+	font-family: "Satoshi";
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    margin-right: 5rem;
+    text-align: center;
+    background-color: rgb(70, 52, 88, 0.41);
+    backdrop-filter: blur(9.7px);
+    -webkit-backdrop-filter: blur(9.7px);
+    padding: 4rem;
+    border-radius: 7px;
+    
+}
+
+#img_stage{
+    border-radius: 7px;    
+    width: 30rem;
+    margin-left: 5rem;
+    cursor: pointer;
+}
+
+#detail{
+    color: #FFF;
+	font-family: "Satoshi";
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    margin-right: 5rem;
+    text-align: center;
+    font-weight: 700;
+    border: 2px solid rgb(70, 52, 88);
+    padding: 2rem;
+    border-radius: 7px;
+    
+}
+
+#img_stage:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
