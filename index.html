@@ -1,354 +1,653 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Pierre Sounouvou - Portfolio Développeur</title>
+    <meta name="description" content="Portfolio de Pierre Sounouvou, étudiant en informatique passionné par le développement d'applications, logiciels et le Cloud Computing">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-
 </head>
 <body>
-    <main>
-        <div class="presentation" id="presentation">
-            <video id="video" width="1200" height="680" data-setup='{}' autoplay loop muted>
-                <source src="cellular.mp4" type="video/mp4">
-            </video>
-            <h1> Hi I'm Pierre</h1>            
-        </div>
-        <a id="source" onclick="window.open('https://www.reddit.com/r/cellular_automata/comments/eg6vgk/twodimensional_historydependent_cellular_automata/', '_blank')">Automates cellulaires bidimensionnels dépendant de l'histoire </a>
-        
-        <!-- Fixed navbar that stays visible and centered -->
-        <div class="nav">
-            <h3 id="link" data-target="presentation">Presentation</h3>
-            <h3 id="separator">////</h3>
-            <h3 id="link" data-target="title-projet">Projet</h3>
-            <h3 id="separator">////</h3>
-            <h3 id="link" data-target="title-skills">Skills</h3>
-            <h3 id="separator">////</h3>
-            <h3 id="link" data-target="contact">Contact</h3>
-            <h3 id="separator">////</h3>
-            <h3 id="link" data-target="stage">Expérience</h3>
-        </div>
-
-        <div class="description">
-            <div class="texte-desc">
-                <div class="texte_sub">
-                    <h3 id="command">$cat /home/Pierre/detail.txt</h3>
-                    <h3>Je m'appelle Pierre Sounouvou j'ai 19 ans, et je suis un étudiant en informatique à l'Université Paris Saclay.
-                        J'effectue actuellement un BUT informatique afin de pouvoir entrer dans une école
-                        d'ingénieur. Je m'intéresse plus particulièrement au domaine de la création d'Application, de
-                        logiciel et au Cloud Computing.
-                    </h3>
-                </div>
-                <div class="img">
-                    <img src="parissaclay.jpg" alt="Mon Universite" id="img_uni">
-                </div>
-            </div>
-            <div class="parcours">
-                <h3 id="command">$cat /home/Pierre/parcours.txt</h3>
-                <h3>Voici le parcours que j'ai réalisé jusqu'à aujourd'hui :</h3>
-                </h3>
-                <div class="metro-container">
-                    <div class="metro-line">
-                        <div class="station">
-                            <div class="circle" style="background-color: transparent; border: transparent;"></div>
-                        </div>
-                        <div class="station">
-                            <div class="circle"></div>
-                            <span class="label" onclick="window.open('https://www.iut-orsay.universite-paris-saclay.fr/informatique-en-3-ans', '_blank')">BUT Informatique à l'université Paris Sacaly</span>
-                            <span class="labelLeft">2024 - ...</span>
-                        </div>
-                        <div class="station">
-                            <div class="circle" style="background-color: transparent; border: transparent;"></div>
-                        </div>
-                        <div class="station">
-                            <div class="circle" style="background-color: transparent; border: transparent;"></div>
-                        </div>
-                        <div class="station">
-                            <div class="circle"></div>
-                            <span class="label" onclick="window.open('https://oniseptv.onisep.fr/video/la-specialite-numerique-et-sciences-informatiques-nsi#:~:text=Au%20lyc%C3%A9e%2C%20en%20voie%20g%C3%A9n%C3%A9rale,des%20sites%20internet%2C%20des%20applications%E2%80%A6', '_blank')">Lycée avec la spécialité Numérique Science de L'informatique et Mathématiques</span>
-                            <span class="labelLeft">2021 - 2024</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="write_code">
-                    <h3 id="code"></h3>
-                </div>
-            </div>
-        </div>
-        <h1 id="title-projet">Projet réalisé: </h1>
-        <h3 id="sub">Découvrez mes projets que j'ai réalisé dans le cadre académique ou seul</h3>
-        <div class="projet">
-            <div class="projet1" onclick="window.open('https://github.com/LopoDistrict/Nuee', '_blank')">
-                <div class="media">
-                    <video autoplay muted id="media_projet" loop>
-                        <source src="nuee.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="project_description">
-                    <h3>Simulation d'une Nuée d'oiseau en 3d</h3>
-                    <div class="skills">
-                        <h4 id="python">Python</h4>
-                        <h4 id="other">OpenGL</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projet1">
-                <div class="media" onclick="window.open('./s102.pdf', '_blank')">
-                    <img id="media_projet" src="s102.gif" style="width: 15rem;">                                    
-                </div>
-                <div class="project_description">
-                    <h3>Création d'un jeux vidéo utilisant la librairie SFML</h3>
-                    <div class="skills">
-                        <h4 id="cpp">C++</h4>
-                        <h4 id="other">SFML</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projet1" onclick="window.open('https://github.com/LopoDistrict/Academic', '_blank')">
-                <div class="media">
-                    <img id="media_projet" src="img.png" style="width: 15rem;">                                    
-                </div>
-                <div class="project_description">
-                    <h3>Application Etudiante avec IA intégré</h3>
-                    <div class="skills">
-                        <h4 id="python">Python</h4>
-                        <h4 id="other" style="border: 2px solid #038bdf; color: #038bdf;">Flutter</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projet1" onclick="window.open('https://github.com/LopoDistrict/HumanSimulation', '_blank')">
-                <div class="media">
-                    
-                    <video id="media_projet" width="1200" height="680" data-setup='{}' autoplay loop muted style="width: 15rem;">
-                        <source src="img.mp4" type="video/mp4">
-                    </video>                                  
-                </div>
-                <div class="project_description">
-                    <h3>Automate cellulaire du comportement humain à l'aide du machine learning (RL)</h3>
-                    <div class="skills">
-                        <h4 id="cpp">C++</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <h3 id="title-skills" >Skills</h3>
-            
-            <!-- Improved hexagon layout -->
-            <div class="sub-title">
-                <h3 id="subtitle" >Hard Skills / Compétences techniques</h3>
-            </div>
-            <div class="hard-skills">                
-                
-                <div class="hexagon">
-                    <h3>Traitement des données</h3>
-                    <p>Maitrise d'OracleSQL, MySQL, SQLite</p>
-                    <p>Python et Livrairie Panda, Numpy, Matplotlib</p>
-                    <p>Format de fichier JSON, XML, CSV...</p>   
-                    <p>Visualisation des données</p>
-                </div>
-
-                <div class="hexagon">
-                    <h3>Algorithmie et Programmation</h3>
-                    <p>Languages: C++/C, Python, Java, PHP (basique), JavaScript</p>
-                    <p>Résolution de problème</p>
-                    <p>Visualisation graphique avec OpenGL, PyQt5</p>   
-                </div>
-
-                <div class="hexagon">
-                    <h3>Système/Outils</h3>
-                    <p>Maitrise de Linux, Windows</p>
-                    <p>Connaissance de Git/GitLab/GIthub</p>                    
-                </div>
-            </div>
-
-            <div class="sub-title">
-                <h3 id="subtitle" >Soft Skills / Compétences Sociales</h3>
-            </div>
-            <div class="hard-skills">                
-                
-                <div class="hexagon-soft">
-                    <h3>Management en équipe</h3>
-                    <p>Cours de Gestion Projet</p>
-                    <p>Communication et Organisation</p>
-                    <p>Travail en équipe et la maitrise du temps</p>   
-                </div>
-
-                <div class="hexagon-soft">
-                    <h3>Team Work</h3>
-                    <p>Esprit critique</p>
-                    <p>Attention au détail</p>
-                    <p>Adaptabilité et Collaboration</p>   
-                </div>
-
-                <div class="hexagon-soft">
-                    <h3>Créativité </h3>
-                    <p>Cours d'interaction Humain Machine (IHM)</p>                    
-                </div>
-            </div>
-
-            <div class="langues">
-                <h3 id="title-skills" >Langues </h3>
-                <div class="langues-list">
-                    <p id="langue_txt">Français couramment</p>
-                    <p id="langue_txt">Anglais B2</p>
-                    <p id="langue_txt">Espagnol B1</p>
-                </div>
-            </div>
-
-            <h3 id="title-skills" >Hobbies</h3>
-            <h3 id="sub">Voici les disciplines que je pratique en dehors du cercle Académique</h3>
-            <div class="Passion">
-                
-                <div class="tennis">
-                    <img src="tennis.jpg" alt="tennis" id="imgHobbies">
-                    <h3 id="sub-hobbies">Tennis</h3>
-                    
-                </div>
-
-                <div class="echec">                    
-                    <img src="echec.jpg" alt="tennis" id="imgHobbies">
-                    <h3 id="sub-hobbies">Échecs</h3>
-                </div>
-
-                <div class="batterie">
-                    <img src="drums.jpg" alt="tennis" id="imgHobbies">
-                    <h3 id="sub-hobbies">Batterie</h3>
-                </div>
-            </div>
-
-            <div class="stage" id="stage">
-                <h3 id="title-skills" >Précédents Stages</h3>
-                <div class="stage-content">
-                    <img src="bat.png" alt="" id="img_stage" onclick="window.open('https://www.essonne.gouv.fr/Services-de-l-Etat/Presentation-des-services/Direction-Departementale-des-Finances-Publiques-de-l-Essonne', '_blank')">
-                    <div class="txt-content">
-                        <p id="txt_stage">J'ai eu la chance de pour travailler dans une administration publique, la DGFIP d'évry, 
-                            en Juillet 2024. J'ai été comprendre la rigueur de travail en administration.
-                            mais aussi de comprendre l'importance de l'informatique et de l'utilisation des 
-                            données dans une entreprise complexe. 
-                        </p>
-                        <p id="detail">J'ai occupé le poste de Vacataire au sein de la BIL (Budget immobilier logistique)</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact" id="contact">
-                <div class="main-cont">
-                    <h1>Contact</h1>
-                    <h3>Vous pouvez me contactez par les moyens suivants: </h3>
-                    <div class="linkedin">
-                        <img src="link.webp" id="link-img" onclick="window.location.href='https://www.linkedin.com/in/pierre-sounouvou-24773a329/'">
-                        <p onclick="window.location.href='https://www.linkedin.com/in/pierre-sounouvou-24773a329/'">Mon linkedin</p>
-                    </div>
-                    <div class="Github">
-                        <img src="git" id="git-img" onclick="window.location.href='https://github.com/LopoDistrict'">
-                        <p onclick="window.location.href='https://github.com/LopoDistrict'">Mon Github</p>
-                    </div>
-                    <div class="Email">
-                        <img src="email.jpg" id="git-img">
-                        <p>Mon Email: pierre.sounouvou@universite-paris-saclay.fr</p>
-                    </div>
-                    <div class="Email">           
-                        <img src="telephone.jpg" id="git-img">
-                        <p>Mon Téléphone: 0767304611</p>
-                    </div>
-                </div>
-                <div class="img">                    
-                    <img src="photo.jpg" id="photo">
-                </div>
-            </div>
-        </div>
-
+    <header>
         <script>
-            // Add this JavaScript to handle smooth scrolling and transitions
-            document.addEventListener('DOMContentLoaded', function() {
-                // Get all navigation links
-                const navLinks = document.querySelectorAll('#link');
-                
-                // Add click event listeners to each link
-                navLinks.forEach(link => {
-                    link.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        const targetId = this.getAttribute('data-target');
-                        const targetElement = document.getElementById(targetId);
-                        
-                        if (targetElement) {
-                            // Scroll to the target element with smooth behavior
-                            // Add offset to account for the fixed navbar at bottom
-                            const navbarHeight = document.querySelector('.nav').offsetHeight;
-                            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
-                            
-                            window.scrollTo({
-                                top: targetPosition,
-                                behavior: 'smooth'
-                            });
-                            
-                            // Optional: Add active class to target section
-                            document.querySelectorAll('main > div').forEach(div => {
-                                div.classList.remove('active');
-                            });
-                            targetElement.classList.add('active');
-                        }
-                    });
-                });
-                
-                // Intersection Observer to handle section transitions as user scrolls
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('active');
-                        }
-                    });
-                }, {
-                    threshold: 0.1
-                });
-                
-                // Observe all sections
-                document.querySelectorAll('main > div').forEach(section => {
-                    observer.observe(section);
-                });
-                
-                // Your existing write function
-                function write() {
-                    const value = `
-    #include <stdint.h> // uint32_t
-    float Q_rsqrt(float number)
-    {
-    union {
-    float f;
-    uint32_t i;
-    } conv = { .f = number };
-    conv.i = 0x5f3759df - (conv.i >> 1);
-    conv.f *= 1.5F - (number * 0.5F * conv.f * conv.f);
-    return conv.f;
-    }`;
+            // Navigation mobile
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}));
+
+// Changement de style de la navbar au scroll
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.padding = '0.5rem 2rem';
+        navbar.style.backgroundColor = 'rgba(30, 41, 59, 0.98)';
+    } else {
+        navbar.style.padding = '1rem 2rem';
+        navbar.style.backgroundColor = 'rgba(30, 41, 59, 0.95)';
+    }
+});
+
+// Animation au défilement
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.skill-card, .project-card, .hobby-card').forEach(el => {
+    observer.observe(el);
+});
+
+// Formulaire de contact
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
         
-                    let code_text = document.getElementById("code");
-        
-                    function typeWriter(index) {
-                        if (index < value.length) {
-                            code_text.textContent += value[index];
-                            index++;
-                            setTimeout(() => typeWriter(index), 35);
-                        }
-                        else if (index >= value.length){
-                            index = 0;                        
-                            setTimeout(() => typeWriter(index), 205);
-                            code_text.textContent = ""
-                        }
-                    }
-        
-                    typeWriter(0);
-                }
-        
-                write();
-            });
+        // Ici vous ajouteriez le code pour envoyer le formulaire
+        // Pour l'instant, affichons une alerte
+        alert('Merci pour votre message ! Je vous répondrai dès que possible.');
+        contactForm.reset();
+    });
+}
+
+// Animation de la timeline dans la section about
+function animateTimeline() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    
+    timelineItems.forEach((item, index) => {
+        setTimeout(() => {
+            item.style.opacity = 1;
+            item.style.transform = 'translateX(0)';
+        }, 300 * index);
+    });
+}
+
+// Initialiser l'animation de la timeline quand la section est visible
+const aboutSection = document.querySelector('.about');
+if (aboutSection) {
+    const aboutObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateTimeline();
+                aboutObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    aboutObserver.observe(aboutSection);
+}
+
+// Effet de machine à écrire pour le terminal
+function typeWriter() {
+    const terminalText = document.querySelector('.terminal-body');
+    if (!terminalText) return;
+    
+    const text = terminalText.innerHTML;
+    terminalText.innerHTML = '';
+    let i = 0;
+    
+    function type() {
+        if (i < text.length) {
+            terminalText.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, 20);
+        }
+    }
+    
+    type();
+}
+
+// Démarrer l'effet de machine à écrire quand la section est visible
+const terminalObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            typeWriter();
+            terminalObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+const terminalSection = document.querySelector('.terminal');
+if (terminalSection) {
+    terminalObserver.observe(terminalSection);
+}
         </script>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <span>Pierre Sounouvou</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#presentation" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Expérience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="presentation">
+            <div class="video-container">
+                <video id="video" autoplay loop muted playsinline>
+                    <source src="cellular.mp4" type="video/mp4">
+                </video>
+                <div class="overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Pierre Sounouvou</h1>
+                <h2>Étudiant en Développement Informatique</h2>
+                <p>Passionné par la création d'applications, les logiciels et le Cloud Computing</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="arrow"></div>
+            </div>
+            <a id="source" onclick="window.open('https://www.reddit.com/r/cellular_automata/comments/eg6vgk/twodimensional_historydependent_cellular_automata/', '_blank')">Automates cellulaires bidimensionnels dépendant de l'histoire</a>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title">À propos de moi</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="terminal">
+                            <div class="terminal-header">
+                                <div class="terminal-buttons">
+                                    <span class="terminal-btn red"></span>
+                                    <span class="terminal-btn yellow"></span>
+                                    <span class="terminal-btn green"></span>
+                                </div>
+                                <span class="terminal-title">pierre@portfolio:~</span>
+                            </div>
+                            <div class="terminal-body">
+                                <p class="command">$ cat /home/pierre/detail.txt</p>
+                                <p>Je m'appelle Pierre Sounouvou, j'ai 19 ans, et je suis étudiant en informatique à l'Université Paris Saclay.</p>
+                                <p>J'effectue actuellement un BUT informatique avec l'objectif d'intégrer une école d'ingénieur par la suite.</p>
+                                <p>Je me spécialise dans le développement d'applications, la création de logiciels et le Cloud Computing.</p>
+                                <p class="command">$ cat /home/pierre/parcours.txt</p>
+                                <p>Mon parcours académique :</p>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2024 - Présent</div>
+                                        <div class="timeline-content">
+                                            <h3 style="margin-left: 1rem;">BUT Informatique à l'Université Paris Saclay</h3>
+                                            <p>Formation diversifiée en informatique, englobant la conception de logiciels, la gestion de bases de données, les réseaux informatiques et le management de projet. </p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">2021 - 2024</div>
+                                        <div class="timeline-content">
+                                            <h3>Baccalauréat Général</h3>
+                                            <p>Spécialités Numérique Science de l'informatique et Mathématiques</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="blinking-cursor">_</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="photo.jpg" alt="Pierre Sounouvou">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Mes projets</h2>
+                <p class="section-subtitle">Découvrez mes projets académiques et personnels</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-media">
+                            <video autoplay muted loop playsinline>
+                                <source src="nuee.mp4" type="video/mp4">
+                            </video>
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="window.open('https://github.com/Komodo-source/Nuee', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Simulation d'une nuée d'oiseaux en 3D</h3>
+                            <p>Implémentation d'un algorithme de flocking (boids) avec rendu 3D</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenGL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-media">
+                            <img src="s102.gif" alt="Jeu vidéo SFML">
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="window.open('./s102.pdf', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Jeu vidéo avec SFML</h3>
+                            <p>Développement d'un jeu vidéo complet utilisant la bibliothèque SFML</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">SFML</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-media">
+                            <img src="img.png" alt="Application étudiante avec IA">
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="window.open('https://github.com/Komodo-source/Academic', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Application étudiante avec IA</h3>
+                            <p>Application mobile avec fonctionnalités intelligentes pour les étudiants</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flutter</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-media">
+                            <video autoplay muted loop playsinline>
+                                <source src="img.mp4" type="video/mp4">
+                            </video>
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="window.open('https://github.com/Komodo-source/HumanSimulation', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Automate cellulaire avec Machine Learning</h3>
+                            <p>Simulation du comportement humain utilisant l'apprentissage par renforcement</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-media">
+                            <video autoplay muted loop playsinline>
+                                <source src="img.mp4" type="video/mp4">
+                            </video>
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="window.open('https://github.com/Komodo-source/Alliance-Logistique', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Alliance Logistique</h3>
+                            <p>Réplique d'Uber Eats pour les particuliers (Hôtels, traiteurs, restaurant)</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Go</span>
+                                <span class="tech-tag">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-media">
+                            <img src="iss.webp" alt="">
+                            <div class="project-overlay">
+                                <button class="project-btn" onclick="window.open('https://www.youtube.com/watch?v=RDRwtcKpi90', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>ISS Python</h3>
+                            <p>Logiciel pour récupérer des photos et informations de l'ISS</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">API</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section-title">Mes compétences</h2>
+                
+                <div class="skills-category">
+                    <h3 class="skills-subtitle">Compétences techniques</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>Traitement des données</h4>
+                            <ul>
+                                <li>OracleSQL, MySQL, SQLite</li>
+                                <li>Python (Pandas, NumPy, Matplotlib)</li>
+                                <li>Formats JSON, XML, CSV</li>
+                                <li>Visualisation de données</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Algorithmie & Programmation</h4>
+                            <ul>
+                                <li>C++/C, Python, Java, JavaScript, PHP, React Native</li>
+                                <li>Résolution de problèmes</li>
+                                <li>OpenGL, PyQt5</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h4>Systèmes & Outils</h4>
+                            <ul>
+                                <li>Linux, Windows</li>
+                                <li>Git, GitLab, GitHub</li>
+                                <li>Méthodologies Agile</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3 class="skills-subtitle">Compétences transversales</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Management d'équipe</h4>
+                            <ul>
+                                <li>Gestion de projet</li>
+                                <li>Communication et organisation</li>
+                                <li>Travail en équipe</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Créativité</h4>
+                            <ul>
+                                <li>Conception IHM</li>
+                                <li>Innovation technique</li>
+                                <li>Design thinking</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h4>Langues</h4>
+                            <ul>
+                                <li>Français : Langue maternelle</li>
+                                <li>Anglais : Niveau B2</li>
+                                <li>Espagnol : Niveau B1</li>
+                                <li>Chinois : En apprentissage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hobbies section">
+            <div class="container">
+                <h2 class="section-title">Centres d'intérêt</h2>
+                <p class="section-subtitle">Mes activités en dehors du développement</p>
+                
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-chess-knight"></i>
+                        </div>
+                        <h3>Échecs</h3>
+                        <p>Stratégie, concentration et résolution de problèmes</p>
+                    </div>
+                    
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-drum"></i>
+                        </div>
+                        <h3>Batterie</h3>
+                        <p>Rythme, coordination et expression artistique</p>
+                    </div>
+                    
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-table-tennis"></i>
+                        </div>
+                        <h3>Tennis</h3>
+                        <p>Stratégie, réflexes et condition physique</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                        <h3>Histoire et géographie</h3>
+                        <p>analyse, avancer en comprenant les anciennes erreurs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience section" id="experience">
+            <div class="container">
+                <h2 class="section-title">Expérience professionnelle</h2>
+                
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-logo">
+                            <img src="bat.png" alt="DGFIP Évry">
+                        </div>
+                        <div class="experience-info">
+                            <h3>Vacataire - Budget Immobilier Logistique</h3>
+                            <p class="company">DGFIP Évry - Administration publique</p>
+                            <p class="date">Juillet 2024</p>
+                        </div>
+                    </div>
+                    <div class="experience-details">
+                        <p>J'ai eu l'opportunité de travailler au sein d'une administration publique, la DGFIP d'Évry. Cette expérience m'a permis de :</p>
+                        <ul>
+                            <li>Comprendre la rigueur de travail en administration</li>
+                            <li>Appréhender l'importance de l'informatique et de l'utilisation des données dans une structure complexe</li>
+                            <li>Participer à des processus administratifs et budgétaires</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="window.open('https://www.essonne.gouv.fr/Services-de-l-Etat/Presentation-des-services/Direction-Departementale-des-Finances-Publiques-de-l-Essonne', '_blank')">
+                            Voir l'organisation <i class="fas fa-external-link-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">N'hésitez pas à me contacter pour discuter de projets ou opportunités</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>pierre.sounouvou@universite-paris-saclay.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Téléphone</h4>
+                                <p>07 67 30 46 11</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/pierre-sounouvou-24773a329/" target="_blank">/pierre-sounouvou</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/Komodo-source" target="_blank">/Komodo-source</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-file"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Mon CV</h4>
+                                <a href="cv-pierre-sounouvou.pdf" target="_blank">/cv-pierre-sounouvou</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Pierre Sounouvou</h3>
+                    <p>Développeur passionné par l'innovation et la technologie</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#presentation">Accueil</a>
+                    <a href="#about">À propos</a>
+                    <a href="#projects">Projets</a>
+                    <a href="#skills">Compétences</a>
+                    <a href="#experience">Expérience</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/pierre-sounouvou-24773a329/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/LopoDistrict" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pierre Sounouvou. Tous droits réservés.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
