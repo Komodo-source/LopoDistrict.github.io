@@ -312,7 +312,7 @@ body {
 /* About Section */
 .about-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    /*grid-template-columns: 2fr 1fr;*/
     gap: 3rem;
     align-items: center;
 }
@@ -936,4 +936,5 @@ body {
         margin-right: 0;
         margin-bottom: 1rem;
     }
+
 }
