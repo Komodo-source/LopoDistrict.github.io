@@ -56,14 +56,12 @@ document.querySelectorAll('.skill-card, .project-card, .hobby-card').forEach(el 
     observer.observe(el);
 });
 
-// Formulaire de contact
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Ici vous ajouteriez le code pour envoyer le formulaire
-        // Pour l'instant, affichons une alerte
+
         alert('Merci pour votre message ! Je vous répondrai dès que possible.');
         contactForm.reset();
     });
@@ -81,7 +79,7 @@ function animateTimeline() {
     });
 }
 
-// Initialiser l'animation de la timeline quand la section est visible
+
 const aboutSection = document.querySelector('.about');
 if (aboutSection) {
     const aboutObserver = new IntersectionObserver((entries) => {
@@ -116,7 +114,6 @@ function typeWriter() {
     type();
 }
 
-// Démarrer l'effet de machine à écrire quand la section est visible
 const terminalObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -174,7 +171,7 @@ if (terminalSection) {
             <div class="hero-content">
                 <h1>Pierre Sounouvou</h1>
                 <h2>Étudiant en Développement Informatique</h2>
-                <p>Passionné par la création d'applications, les logiciels et le Cloud Computing</p>
+                <p>Passionné par la création d'applications, l'IA et le Cloud Computing</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">Voir mes projets</a>
                     <a href="#contact" class="btn btn-secondary">Me contacter</a>
@@ -623,6 +620,7 @@ if (terminalSection) {
 </body>
 
 </html>
+
 
 
 
